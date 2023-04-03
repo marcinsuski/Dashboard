@@ -7,9 +7,6 @@ import { tokens } from "../../theme";
 import Header from "../../components/Header";
 import { Box } from "@mui/system";
 
-
-
-
 const FAQ = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);

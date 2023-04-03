@@ -17,7 +17,7 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
- const Item = ({ title, to, icon, selected, setSelected }) => {
+const Item = ({ title, to, icon, selected, setSelected }) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     return (
@@ -138,7 +138,9 @@ const Sidebar = () => {
                             icon={<HomeOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                            >Dashboard</Item>
+                        >
+                            Dashboard
+                        </Item>
 
                         <Typography
                             variant="h6"
@@ -153,26 +155,32 @@ const Sidebar = () => {
                             icon={<PeopleOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                        >Manage Team</Item>
+                        >
+                            Manage Team
+                        </Item>
                         <Item
                             title="Contacts Information"
                             to="/contacts"
                             icon={<ContactsOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                        >Contacts information</Item>
+                        >
+                            Contacts information
+                        </Item>
                         <Item
                             title="Invoices Balances"
                             to="/invoices"
                             icon={<ReceiptOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                        >Invoice Balances</Item>
+                        >
+                            Invoice Balances
+                        </Item>
                         <Typography
                             variant="h6"
                             color={colors.grey[300]}
                             sx={{ m: "15px 0 5px 20px" }}
-                      >
+                        >
                             Pages
                         </Typography>
 
@@ -182,21 +190,27 @@ const Sidebar = () => {
                             icon={<PersonOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                            >Profile Form</Item>
+                        >
+                            Profile Form
+                        </Item>
                         <Item
                             title="Calendar"
                             to="/calendar"
                             icon={<CalendarTodayOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                            >Calendar</Item>
+                        >
+                            Calendar
+                        </Item>
                         <Item
                             title="FAQ Page"
                             to="/faq"
                             icon={<HelpOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                        >FAQ Page</Item>
+                        >
+                            FAQ Page
+                        </Item>
 
                         <Typography
                             variant="h6"
@@ -211,28 +225,36 @@ const Sidebar = () => {
                             icon={<BarChartOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                        >Bar Chart</Item>
+                        >
+                            Bar Chart
+                        </Item>
                         <Item
                             title="Pie Chart"
                             to="/pie"
                             icon={<PieChartOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                            >Pie Chart</Item>
+                        >
+                            Pie Chart
+                        </Item>
                         <Item
                             title="Line Chart"
                             to="/line"
                             icon={<TimelineOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                            >Line Chart</Item>
+                        >
+                            Line Chart
+                        </Item>
                         <Item
                             title="Geography Chart"
                             to="/geography"
                             icon={<MapOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
-                            >Geography Chart</Item>
+                        >
+                            Geography Chart
+                        </Item>
                     </Box>
                 </Menu>
             </ProSidebar>
